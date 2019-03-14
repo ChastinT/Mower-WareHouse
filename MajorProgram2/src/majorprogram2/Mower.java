@@ -61,7 +61,7 @@ public class Mower
       
       public String toString()
       {
-          return "\n"+manufacturer+"\n"+year+"\n"+serialNumber+"\n";
+          return manufacturer+"\n"+year+"\n"+serialNumber;
       }
       
      

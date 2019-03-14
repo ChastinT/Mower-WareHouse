@@ -42,6 +42,6 @@ public class WalkBehindMower extends Mower
        
        public String toString()
        {
-           return super.toString()+"W"+"\n"+cutWidth+"\n"+wheelDiameter+"\n";
+           return "W"+"\n"+super.toString()+"\n"+cutWidth+"\n"+wheelDiameter;
        }
 }

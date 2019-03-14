@@ -48,7 +48,7 @@ public class MowerWareHouse
         String output = storeName+"\n";
         for (int i = 0; i < wareHouse.size();i++)
         {
-            output += wareHouse.get(i);
+            output += wareHouse.get(i)+"\n";
         }
         return output;
     }

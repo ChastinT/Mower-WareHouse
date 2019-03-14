@@ -42,6 +42,6 @@ public class CommercialMower extends LawnTractor
  
  public String toString()
  {
-     return super.toString()+"C"+"\n"+operatingHours+"\n"+"Does it have zeroTurnRadius: "+zeroTurnRadius;
+     return "C"+"\n"+super.getEngine()+"\n"+super.getModel()+"\n"+super.getDeckWidth()+"\n"+operatingHours+"\n"+"Does it have zeroTurnRadius: "+zeroTurnRadius;
  }
 }

@@ -54,6 +54,6 @@ public class LawnTractor extends Mower
       
       public String toString()
       {
-          return super.toString()+"L"+"\n"+engine+"\n"+model+"\n"+deckWidth+"\n";
+          return "L"+"\n"+super.toString()+"\n"+engine+"\n"+model+"\n"+deckWidth;
       }
 }
