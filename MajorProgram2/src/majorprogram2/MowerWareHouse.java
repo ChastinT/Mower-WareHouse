@@ -38,13 +38,19 @@ public class MowerWareHouse
         wareHouse = enter;
     }
     
-    public String getWareHouse()
+    public ArrayList<Mower> getWareHouse()
     {
+        return wareHouse;
+    }
+    
+    public String toString()
+    {
+        String output = storeName+"\n";
         for (int i = 0; i < wareHouse.size();i++)
         {
-            return wareHouse.get(i).toString();
+            output += wareHouse.get(i);
         }
-        return " ";
+        return output;
     }
  /*
     public void readMowerData(String inputFileName)

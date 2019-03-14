@@ -61,6 +61,6 @@ public class Engine
       
       public String toString()
       {
-          return manufacturer+"\n"+horsePower+"\n"+cylinders+"\n";
+          return manufacturer+"\n"+horsePower+"\n"+cylinders;
       }
 }

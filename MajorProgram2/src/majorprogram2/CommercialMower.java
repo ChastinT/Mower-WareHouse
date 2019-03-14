@@ -17,6 +17,7 @@ public class CommercialMower extends LawnTractor
  public CommercialMower()
  {
      operatingHours = 0.0;
+     zeroTurnRadius = false;
  }
  
  public void setOperatingHours(double enter)

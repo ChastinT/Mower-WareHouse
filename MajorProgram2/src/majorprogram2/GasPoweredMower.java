@@ -42,6 +42,6 @@ public class GasPoweredMower extends WalkBehindMower
  
  public String toString()
  {
-     return super.toString()+"G"+"\n"+engine+"\n"+"Is it self propelled: "+selfPropelled;
+     return super.toString()+"G"+"\n"+engine+"\n"+"Is it self propelled: "+selfPropelled+"\n";
  }
 }
