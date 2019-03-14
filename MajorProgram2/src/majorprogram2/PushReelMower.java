@@ -20,6 +20,6 @@ public class PushReelMower extends WalkBehindMower
     
     public String toString()
     {
-        return super.toString()+"PR"+"\n"+Integer.toString(numWheels);
+        return super.toString()+"P"+"\n"+Integer.toString(numWheels);
     }
 }

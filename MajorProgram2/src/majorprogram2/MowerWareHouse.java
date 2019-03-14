@@ -13,15 +13,16 @@ import java.util.ArrayList;
  */
 public class MowerWareHouse 
 {
-    String storeName;
-ArrayList <Mower> wareHouse = new ArrayList<Mower>();     
+    private String storeName;
+    private ArrayList <Mower> wareHouse = new ArrayList<Mower>();     
 
     public MowerWareHouse()
     {
         storeName = "";
+        wareHouse = new ArrayList<Mower>();
     }
     
-    /*
+    
     public void setStoreName(String enter)
     {
         storeName = enter;
@@ -32,6 +33,20 @@ ArrayList <Mower> wareHouse = new ArrayList<Mower>();
         return storeName;
     }
     
+     public void setWareHouse(ArrayList <Mower> enter)
+    {
+        wareHouse = enter;
+    }
+    
+    public String getWareHouse()
+    {
+        for (int i = 0; i < wareHouse.size();i++)
+        {
+            return wareHouse.get(i).toString();
+        }
+        return " ";
+    }
+ /*
     public void readMowerData(String inputFileName)
     {
         

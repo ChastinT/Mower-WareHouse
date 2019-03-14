@@ -11,9 +11,9 @@ package majorprogram2;
  */
 public class LawnTractor extends Mower 
 {
-    Engine engine;
-    String model;
-    double deckWidth;
+    private Engine engine;
+    private String model;
+    private double deckWidth;
     
   public LawnTractor()
   {
