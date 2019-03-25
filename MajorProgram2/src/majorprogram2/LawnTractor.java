@@ -11,6 +11,7 @@ package majorprogram2;
  */
 public class LawnTractor extends Mower 
 {
+    private String type = "L";
     private Engine engine;
     private String model;
     private double deckWidth;
@@ -54,6 +55,6 @@ public class LawnTractor extends Mower
       
       public String toString()
       {
-          return "L"+"\n"+super.toString()+"\n"+engine+"\n"+model+"\n"+deckWidth;
+          return super.toString()+"L"+"\r\n"+engine+"\r\n"+model+"\r\n"+deckWidth+"\r\n";
       }
 }

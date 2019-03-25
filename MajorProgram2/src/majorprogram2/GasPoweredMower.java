@@ -11,6 +11,7 @@ package majorprogram2;
  */
 public class GasPoweredMower extends WalkBehindMower 
 {
+    private String type = "G";
     private Engine engine;
     private boolean selfPropelled;
     
@@ -42,6 +43,6 @@ public class GasPoweredMower extends WalkBehindMower
  
  public String toString()
  {
-     return "G"+"\n"+super.getCutWidth()+"\n"+super.getWheelDiameter()+"\n"+engine+"\n"+"Is it self propelled: "+selfPropelled;
+     return super.getManufacturer()+"\r\n"+super.getYear()+"\r\n"+super.getSerialNumber()+"\r\n"+"G"+"\r\n"+super.getCutWidth()+"\r\n"+super.getWheelDiameter()+"\r\n"+engine+"\r\n"+"Is it self propelled: "+selfPropelled+"\r\n";
  }
 }

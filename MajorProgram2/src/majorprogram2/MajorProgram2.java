@@ -5,7 +5,9 @@
  */
 package majorprogram2;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 /**
@@ -17,8 +19,11 @@ public class MajorProgram2 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) 
+    private static int result;
+    public static void main(String[] args) throws FileNotFoundException 
     {
+        /*
+        
         Engine testEngine = new Engine("Toyota",20.5,4);
         ArrayList <Mower> setter = new ArrayList<Mower>();
        
@@ -81,6 +86,33 @@ public class MajorProgram2 {
         wareHouse.setWareHouse(setter);
        
        JOptionPane.showMessageDialog(null,wareHouse);
+       */
+        
+        MowerWareHouse wareHouse = new MowerWareHouse();
+        
+        JFileChooser chooser = new JFileChooser("C:\\Users\\Chastin\\COMP167\\MajorProg2\\major-program-2-ChastinT");
+        chooser.showSaveDialog(null);
+        wareHouse.readMowerData(chooser.getSelectedFile().getName()); 
+        if (wareHouse.equals(null))
+        {
+        wareHouse.readMowerData("input.txt");
+        }
+           /* WalkBehindMower testBehind = new WalkBehindMower();
+            testBehind.setManufacturer("This is adding test");
+            testBehind.setYear(1999);
+            testBehind.setSerialNumber("Mad Dog546");
+         testBehind.setCutWidth(4.6);
+         testBehind.setWheelDiameter(20.5);
+           testBehind.setManufacturer("FINISH IT");
+        testBehind.setYear(1979);
+        testBehind.setSerialNumber("COLDFIRE3234");
+        wareHouse.addMower(testBehind);
+*/
+           
+    
+        wareHouse.saveMowerData("output.txt");
+        WareHouseFrame framer = new WareHouseFrame(wareHouse);
+        framer.setVisible(true);
         
     }
     

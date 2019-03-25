@@ -11,6 +11,7 @@ package majorprogram2;
  */
 public class CommercialMower extends LawnTractor 
 {
+    private String type = "C";
  private double operatingHours;
  private boolean zeroTurnRadius;
  
@@ -42,6 +43,6 @@ public class CommercialMower extends LawnTractor
  
  public String toString()
  {
-     return "C"+"\n"+super.getEngine()+"\n"+super.getModel()+"\n"+super.getDeckWidth()+"\n"+operatingHours+"\n"+"Does it have zeroTurnRadius: "+zeroTurnRadius;
+     return super.toString()+"C"+"\r\n"+super.getEngine()+"\r\n"+super.getModel()+"\r\n"+super.getDeckWidth()+"\r\n"+operatingHours+"\r\n"+"Does it have zeroTurnRadius: "+zeroTurnRadius+"\r\n";
  }
 }

@@ -9,7 +9,7 @@ package majorprogram2;
  *
  * @author Chastin
  */
-public class Mower 
+public abstract class Mower 
 {
   private  String manufacturer;
    private int year;
@@ -21,13 +21,7 @@ public class Mower
        year = 0;
        serialNumber = "";
    }
-   
-    public Mower(String manufacturer, int year, String serialNumber)
-   {
-       this.manufacturer = manufacturer;
-       this.year = year;
-       this.serialNumber = serialNumber;
-   }
+
     
        public void setManufacturer(String enter)
       {
@@ -59,9 +53,16 @@ public class Mower
           return serialNumber;
       }
       
+      public void setMower(String manufacturer,int year,String serialNumber)
+      {
+       this.manufacturer = manufacturer;
+       this.year = year;
+       this.serialNumber = serialNumber;
+      }
+      
       public String toString()
       {
-          return manufacturer+"\n"+year+"\n"+serialNumber;
+          return manufacturer+"\r\n"+year+"\r\n"+serialNumber+"\r\n";
       }
       
      

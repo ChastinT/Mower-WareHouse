@@ -59,8 +59,10 @@ public class Engine
           return cylinders;
       }
       
+      
+      
       public String toString()
       {
-          return manufacturer+"\n"+horsePower+"\n"+cylinders;
+          return manufacturer+"\r\n"+horsePower+"\r\n"+cylinders;
       }
 }

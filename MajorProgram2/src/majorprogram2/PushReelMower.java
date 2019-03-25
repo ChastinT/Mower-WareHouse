@@ -11,6 +11,8 @@ package majorprogram2;
  */
 public class PushReelMower extends WalkBehindMower
 {
+    private String type = "P";
+    
     private int numWheels;
     
     public PushReelMower()
@@ -30,6 +32,6 @@ public class PushReelMower extends WalkBehindMower
     
     public String toString()
     {
-        return "P"+"\n"+super.getCutWidth()+"\n"+super.getWheelDiameter()+"\n"+Integer.toString(numWheels);
+        return super.getManufacturer()+"\r\n"+super.getYear()+"\r\n"+super.getSerialNumber()+"\r\n"+"P"+"\r\n"+super.getCutWidth()+"\r\n"+super.getWheelDiameter()+"\r\n"+Integer.toString(numWheels)+"\r\n";
     }
 }
